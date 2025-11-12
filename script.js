@@ -10,8 +10,8 @@ function renderMenu() {
   dishes.forEach((dish, index) => {
     const li = document.createElement('li');
     li.innerHTML = `
-      <span class="dish-name">${dish.name}</span> - 
-      <span class="price">$${dish.price}</span><br>
+      <span class="dish-name">${dish.name}</span>  
+      <span class="price">${dish.price}/-</span><br>
       <small>${dish.desc}</small>
       <button class="delete-btn" onclick="deleteDish(${index})">Delete</button>
     `;
